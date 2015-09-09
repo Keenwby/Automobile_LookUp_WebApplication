@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Unit5_Client</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>Home.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>ModelSer</display-name>
+    <servlet-name>ModelSer</servlet-name>
+    <servlet-class>Servlets.ModelSer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ModelSer</servlet-name>
+    <url-pattern>/ModelSer</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>OptionsetSer</display-name>
+    <servlet-name>OptionsetSer</servlet-name>
+    <servlet-class>Servlets.OptionsetSer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OptionsetSer</servlet-name>
+    <url-pattern>/OptionsetSer</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ResultSer</display-name>
+    <servlet-name>ResultSer</servlet-name>
+    <servlet-class>Servlets.ResultSer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ResultSer</servlet-name>
+    <url-pattern>/ResultSer</url-pattern>
+  </servlet-mapping>
+</web-app>
